@@ -3,7 +3,7 @@ public class Problem1 {
         int length = arr.length;
 
         int low = 0; int high = length - 1;
-        while (low <= high) {
+        while (low < high) {
             int mid = low + (high - low) / 2;
             if (arr[mid] != mid + 1) {
                 high = mid;
